@@ -759,7 +759,9 @@ body {
 
   .services-showcase-hint {
     display: block;
-    align-self: flex-start;
+    align-self: center;
+    text-align: center;
+    width: 100%;
   }
 
   .services-showcase-trigger {
