@@ -234,6 +234,38 @@ body {
   color: #c4d4e7;
 }
 
+.services-hero {
+  background: linear-gradient(180deg, #0a2239, #06182b);
+  color: #e6eef8;
+  text-align: center;
+  padding: 2.1rem 0 1.6rem;
+}
+
+.services-hero h1 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-size: 2.4rem;
+}
+
+.services-hero p {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 1rem;
+}
+
+.services-showcase {
+  background: #06182b;
+  padding: 0.35rem 0 0.9rem;
+}
+
+.services-showcase img {
+  display: block;
+  width: min(1300px, 100%);
+  margin: 0 auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .about-intro {
   background: var(--section-blue);
   color: #e8eef6;
@@ -465,6 +497,18 @@ body {
 
   .why-section {
     padding: 1.5rem 0 2rem;
+  }
+
+  .services-hero {
+    padding: 1.5rem 0 1.2rem;
+  }
+
+  .services-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .services-hero p {
+    font-size: 0.94rem;
   }
 
   .why-section h2 {
