@@ -1,0 +1,342 @@
+:root {
+  --nav-bg: #041425;
+  --text: #ffffff;
+  --hover: #9dc8ff;
+  --button-bg: #1f4d7c;
+  --button-bg-hover: #2b669f;
+  --section-blue: #3a5d84;
+  --footer-bg: #021429;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #102133;
+  background: #f3f6fa;
+  overflow-x: hidden;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--nav-bg);
+  min-height: 56px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 56px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.brand {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.primary-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.primary-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.98rem;
+  padding: 0.35rem 0.1rem;
+  transition: color 0.2s ease;
+}
+
+.primary-nav a:hover {
+  color: var(--hover);
+}
+
+.cta-button {
+  color: var(--text);
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--button-bg), #163a5e);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, var(--button-bg-hover), #1d4c79);
+  transform: translateY(-1px);
+}
+
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.mobile-nav-actions {
+  display: none;
+}
+
+.cta-secondary {
+  background: linear-gradient(135deg, #2f6aa3, #1b4d7f);
+}
+
+.cta-secondary:hover {
+  background: linear-gradient(135deg, #3a7dbf, #245f96);
+}
+
+.content-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-banner {
+  position: relative;
+  min-height: 430px;
+  background-image: url("assets/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(4, 20, 37, 0.06), rgba(4, 20, 37, 0.2));
+}
+
+.about-intro {
+  background: var(--section-blue);
+  color: #e8eef6;
+  padding: 2.7rem 0 2.4rem;
+}
+
+.about-intro h1 {
+  margin: 0 0 1.1rem;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-intro p {
+  max-width: 900px;
+  line-height: 1.7;
+  margin: 0 auto 1.15rem;
+  font-size: 1.02rem;
+  color: #dbe5f0;
+  text-align: center;
+}
+
+.services-strip {
+  background: #305174;
+  color: #e3ecf7;
+  padding: 1.75rem 0 2rem;
+}
+
+.services-strip h2 {
+  margin: 0 0 0.6rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.services-strip p {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.site-footer {
+  background: var(--footer-bg);
+  color: #d4e0ee;
+  padding: 2.15rem 0 2.7rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.site-footer h3 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+.footer-card {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.social-links a {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4e0ee;
+  text-decoration: none;
+  border: 1px solid rgba(212, 224, 238, 0.45);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #9dc8ff;
+  border-color: #9dc8ff;
+  background: rgba(157, 200, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.social-links svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+.mobile-toggle {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  border-radius: 6px;
+  width: 40px;
+  height: 34px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.mobile-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 4px 0;
+  background: #ffffff;
+}
+
+@media (max-width: 860px) {
+  .nav-container {
+    grid-template-columns: minmax(0, 1fr) auto;
+    position: relative;
+    column-gap: 0.4rem;
+    padding: 0 0.45rem;
+  }
+
+  .brand {
+    font-size: 0.98rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-toggle {
+    display: inline-block;
+  }
+
+  .primary-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #05182d;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 0.35rem 1rem 0.6rem;
+  }
+
+  .primary-nav a {
+    padding: 0.75rem 0.2rem;
+  }
+
+  .mobile-nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding-top: 0.85rem;
+    margin-top: 0.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .mobile-nav-actions .cta-button {
+    width: 100%;
+    text-align: center;
+    font-size: 0.86rem;
+    padding: 0.62rem 0.8rem;
+    border-radius: 10px;
+    letter-spacing: 0.2px;
+  }
+
+  .mobile-nav-actions .cta-secondary {
+    background: transparent;
+    border-color: rgba(157, 200, 255, 0.55);
+    color: #d7e8ff;
+  }
+
+  .primary-nav.is-open {
+    display: flex;
+  }
+
+  .cta-button {
+    margin-left: 0;
+    padding: 0.35rem 0.58rem;
+    font-size: 0.76rem;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .hero-banner {
+    min-height: 280px;
+    background-position: center;
+  }
+
+  .about-intro {
+    padding: 2rem 0 1.8rem;
+  }
+
+  .about-intro h1 {
+    font-size: 1.45rem;
+  }
+
+  .about-intro p,
+  .services-strip p {
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
