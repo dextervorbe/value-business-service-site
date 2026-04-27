@@ -52,9 +52,46 @@
     </section>
 
     <section class="services-showcase">
-      <img src="assets/services-showcase.png" alt="Service process and staffing capabilities overview">
+      <div class="content-wrap services-showcase-inner">
+        <p class="services-showcase-hint">Tap image to enlarge</p>
+        <button
+          type="button"
+          class="services-showcase-trigger"
+          id="services-showcase-open"
+          aria-haspopup="dialog"
+          aria-controls="services-showcase-lightbox"
+          aria-expanded="false"
+          aria-label="Enlarge services overview image"
+        >
+          <img src="assets/services-showcase.png" alt="Service process and staffing capabilities overview">
+        </button>
+      </div>
     </section>
   </main>
+
+  <div
+    class="image-lightbox"
+    id="services-showcase-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="services-lightbox-title"
+    hidden
+  >
+    <div class="image-lightbox-backdrop" data-lightbox-dismiss></div>
+    <div class="image-lightbox-dialog">
+      <button
+        type="button"
+        class="image-lightbox-close"
+        aria-label="Close enlarged image"
+        data-lightbox-dismiss
+        tabindex="-1"
+      >
+        &times;
+      </button>
+      <h2 id="services-lightbox-title" class="visually-hidden">Services overview</h2>
+      <img src="assets/services-showcase.png" alt="Service process and staffing capabilities overview">
+    </div>
+  </div>
 
   <footer id="contact" class="site-footer">
     <div class="content-wrap footer-grid">
