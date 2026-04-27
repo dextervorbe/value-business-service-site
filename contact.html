@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Value Business Service LLC</title>
+  <title>Contact | Value Business Service LLC</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-contact">
   <header class="site-header">
     <div class="nav-container">
-      <a class="brand" href="#home">Value Business Service LLC</a>
+      <a class="brand" href="index.html#home">Value Business Service LLC</a>
 
       <button
         class="mobile-toggle"
@@ -29,52 +29,63 @@
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <div class="mobile-nav-actions">
-          <a class="cta-button" href="contact.html#contact-form">Get Started</a>
+          <a class="cta-button" href="#contact-form">Get Started</a>
           <a class="cta-button cta-secondary" href="services.html">Request Services</a>
         </div>
       </nav>
 
       <div class="nav-actions">
-        <a class="cta-button" href="contact.html#contact-form">Get Started</a>
+        <a class="cta-button" href="#contact-form">Get Started</a>
         <a class="cta-button cta-secondary" href="services.html">Request Services</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero-banner">
-      <div class="hero-overlay"></div>
+    <section class="contact-headline">
+      <h1>Contact Us</h1>
     </section>
 
-    <section id="about" class="about-intro">
-      <div class="content-wrap">
-        <h1>We Value our Partners and Applicants!</h1>
-        <p>
-          Whether you need a single driver, a full team, or urgent support, we are here to help.
-          We provide flexible staffing solutions for procurement needs of all sizes, from short-term
-          coverage and emergency support to subcontracting and direct contract opportunities.
-        </p>
-        <p>
-          Our primary focus is CDL driver staffing and transportation workforce solutions, and we
-          proudly support all areas of transportation and logistics staffing. From drivers and dispatch
-          support to warehouse personnel, diesel technicians, and operational roles, we provide
-          reliable, compliant workforce solutions designed to keep your business moving efficiently.
-        </p>
-        <p>
-          Every operation is different, and staffing demands can change quickly. That is why we work
-          closely with our clients to deliver dependable, qualified professionals who are ready to
-          keep business moving.
-        </p>
-      </div>
-    </section>
+    <section class="contact-section" id="contact-form">
+      <div class="content-wrap contact-grid">
+        <aside class="contact-left">
+          <h2>Partner with Logistics &amp; Staffing Experts</h2>
+          <p>
+            We specialize in Class A CDL recruitment and government contract support.
+            Reach out to discuss online applications or procurement needs for your next mission.
+          </p>
+          <img src="assets/contact-team.png" alt="Team discussing logistics operations">
 
-    <section id="services" class="services-strip">
-      <div class="content-wrap">
-        <h2>Services</h2>
-        <p>
-          CDL staffing, dispatch support, logistics workforce placement, and scalable recruiting
-          support for transportation-driven businesses.
-        </p>
+          <h3>Connect</h3>
+          <p><a href="tel:+14844756259">484-475-6259</a></p>
+          <p><a href="mailto:info@valuebusinessservice.com">info@valuebusinessservice.com</a></p>
+
+          <h3>Office Hours</h3>
+          <p>Mon - Fri 8am - 7pm EST as needed</p>
+        </aside>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="first-name">First Name*</label>
+          <input id="first-name" name="first-name" type="text" placeholder="Your first name" required>
+
+          <label for="last-name">Last Name*</label>
+          <input id="last-name" name="last-name" type="text" placeholder="Your last name" required>
+
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="email" placeholder="email@company.com" required>
+
+          <label for="request">Comment or Request*</label>
+          <textarea id="request" name="request" rows="4" placeholder="How can we assist you?" required></textarea>
+
+          <fieldset>
+            <legend>This Inquiry Is From</legend>
+            <label><input type="checkbox" name="inquiry-from" value="applicant"> Applicant</label>
+            <label><input type="checkbox" name="inquiry-from" value="partner"> New or Existing Partner</label>
+            <label><input type="checkbox" name="inquiry-from" value="other"> Other</label>
+          </fieldset>
+
+          <button type="submit">Send Inquiry</button>
+        </form>
       </div>
     </section>
   </main>
