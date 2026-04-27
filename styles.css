@@ -188,13 +188,13 @@ body {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.48);
 }
 
-.page-about main {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+/* .page-about main {
+  /* opacity: 0;
+  transform: translateY(18px); */
+/* transition: opacity 0.65s ease, transform 0.65s ease; */
 }
 
-.page-about.is-ready main {
+*/ .page-about.is-ready main {
   opacity: 1;
   transform: translateY(0);
 }
