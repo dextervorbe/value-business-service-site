@@ -17,3 +17,11 @@ if (toggleButton && navMenu) {
     });
   });
 }
+
+if (document.body.classList.contains("page-about")) {
+  window.addEventListener("load", () => {
+    requestAnimationFrame(() => {
+      document.body.classList.add("is-ready");
+    });
+  });
+}
