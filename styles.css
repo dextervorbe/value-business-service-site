@@ -160,7 +160,7 @@ button.btn--primary {
 .hero-banner {
   position: relative;
   width: 100%;
-  aspect-ratio: 1024 / 430;
+  aspect-ratio: 1024 / 385;
   overflow: hidden;
   background-color: #0d2b1e;
   display: flex;
