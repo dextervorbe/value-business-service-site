@@ -1654,6 +1654,7 @@ a.contact-info-card-value:hover {
   .about-mission-inner {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    text-align: center;
   }
 
   .why-section {
