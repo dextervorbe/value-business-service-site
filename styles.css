@@ -177,16 +177,7 @@ button.btn--primary {
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to bottom,
-    rgba(13, 43, 30, 0.08) 0%,
-    rgba(13, 43, 30, 0.25) 40%,
-    rgba(5, 18, 10, 0.72) 100%
-  );
-  pointer-events: none;
+  display: none;
 }
 
 .hero-content {
@@ -321,14 +312,7 @@ button.btn--primary {
 }
 
 .about-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(13, 43, 30, 0.1) 0%,
-    rgba(13, 43, 30, 0.3) 45%,
-    rgba(5, 18, 10, 0.75) 100%
-  );
+  display: none;
 }
 
 .about-hero-text {
@@ -556,19 +540,16 @@ button.btn--primary {
 }
 
 .svc-category-header--logistics {
-  background-image: url("assets/services-logistics.png");
-  background-position: center 30%;
+  background-image: url("assets/services-logistics.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1024 / 341;
+  min-height: 0;
 }
 
 .svc-category-header-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(5, 18, 10, 0.05) 0%,
-    rgba(5, 18, 10, 0.55) 55%,
-    rgba(5, 18, 10, 0.78) 100%
-  );
+  display: none;
 }
 
 .svc-category-header-text {
