@@ -159,7 +159,8 @@ button.btn--primary {
 
 .hero-banner {
   position: relative;
-  min-height: 520px;
+  width: 100%;
+  aspect-ratio: 1024 / 430;
   overflow: hidden;
   background-color: #0d2b1e;
   display: flex;
@@ -285,10 +286,6 @@ button.btn--primary {
 }
 
 @media (max-width: 860px) {
-  .hero-banner {
-    min-height: 420px;
-  }
-
   .hero-content {
     padding: 0 1rem 2.2rem;
     max-width: 100%;
