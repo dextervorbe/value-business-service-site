@@ -298,9 +298,12 @@ button.btn--primary {
 
 .about-hero {
   position: relative;
-  min-height: 520px;
-  background-image: url("assets/about-hero.png");
-  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1024 / 385;
+  background-color: #0d2b1e;
+  background-image: url("assets/about-hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: flex-end;
@@ -1618,10 +1621,6 @@ a.contact-info-card-value:hover {
     display: none;
   }
 
-
-  .about-hero {
-    min-height: 360px;
-  }
 
   .about-hero-text {
     padding: 0 1rem 2rem;
